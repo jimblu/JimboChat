@@ -4,7 +4,10 @@ const input = document.getElementById('message-input');
 const messageContainer = document.getElementById('message-container');
 
 socket.on('chat-connection', data => {
-    console.log(data)
+    item = document.createElement('h3');
+    item.textContent = data;
+    item.classList.add('info-connection');
+    messageContainer.appendChild(item);
 })
 
 socket.on('chat-message', data => {

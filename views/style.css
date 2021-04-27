@@ -23,6 +23,16 @@ body{
     border: 3px solid #333;
     overflow: scroll;
 }
+.info-connection{
+    position: absolute;
+    top:0;
+    right: 0;
+    /* transform: translateX() */
+    color: #4aa353;
+    font-size: 18px;
+    width: 168px;
+    margin: 5px 0 5px 0;
+}
 #send-container {
     display: flex;
     flex-direction: row;
@@ -43,12 +53,12 @@ body{
     border: none;
     background-color: #333;
     transform-origin: top;
-    transform: translateY(500px);
+    /* transform: translateY(500px); */
 }
-#message-input:focus{
+/* #message-input:focus{
     background-color: #b5e4f4;
     transform: scale(3);
-}
+} */
 #send-button{
     bottom: 10px;
     width: 100px;
